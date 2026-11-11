@@ -1,5 +1,5 @@
-// TaiCH 游戏助手 — 准星参数与几何绘制（桌面叠加与编辑器预览共用同一套绘制代码）
-// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
+// Taisl 游戏助手 — 准星参数与几何绘制（桌面叠加与编辑器预览共用同一套绘制代码）
+// 本文件是 Taisl 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 struct CrosshairParams {
     bool enabled = false;
     bool centered = true;

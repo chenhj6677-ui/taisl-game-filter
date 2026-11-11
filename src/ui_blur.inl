@@ -1,5 +1,5 @@
-// TaiCH 游戏助手 — 面板毛玻璃背景：仅对面板区域做可分离高斯模糊
-// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
+// Taisl 游戏助手 — 面板毛玻璃背景：仅对面板区域做可分离高斯模糊
+// 本文件是 Taisl 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 // A separate, cropped, separable Gaussian pass for the UI background only.
 // No filter shader, GPUParams value, capture texture or desktop pixel is changed.
 static PreviewTarget g_uiBlurA,g_uiBlurB;

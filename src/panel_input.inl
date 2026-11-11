@@ -1,5 +1,5 @@
-// TaiCH 游戏助手 — 面板交互模式：鼠标穿透 / 拦截输入
-// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
+// Taisl 游戏助手 — 面板交互模式：鼠标穿透 / 拦截输入
+// 本文件是 Taisl 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 // Visible UI is an ordinary focused desktop window; hidden UI is an overlay.
 // Keep the original foreground target so Ctrl+Insert can return to the game.
 static HWND g_panelReturnWindow = nullptr;

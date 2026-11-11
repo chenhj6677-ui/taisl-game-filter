@@ -1,5 +1,5 @@
 #pragma code_page(65001)
-// Version resource for TaiCH Game Filter.
+// Version resource for Taisl Game Filter.
 // Licensed under the GNU General Public License v3.0 - see LICENSE.
 #include <windows.h>
 1 VERSIONINFO
@@ -14,11 +14,11 @@ BEGIN
   BEGIN
     BLOCK "080404b0"
     BEGIN
-      VALUE "FileDescription", "TaiCH游戏助手\0"
-      VALUE "ProductName", "TaiCH游戏助手\0"
+      VALUE "FileDescription", "Taisl游戏助手\0"
+      VALUE "ProductName", "Taisl游戏助手\0"
       VALUE "FileVersion", "1.2.7\0"
       VALUE "ProductVersion", "1.2.7\0"
-      VALUE "OriginalFilename", "TaiCH.exe\0"
+      VALUE "OriginalFilename", "Taisl.exe\0"
     END
   END
   BLOCK "VarFileInfo"
