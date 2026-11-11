@@ -1,3 +1,5 @@
+// TaiCH 游戏助手 — 界面设置状态与配置序列化
+// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 struct UISettings {
     int theme=0;
     bool blur=false;

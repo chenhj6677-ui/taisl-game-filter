@@ -1,3 +1,5 @@
+// TaiCH 游戏助手 — 顶部页面切换的分段控件及其滑动动画
+// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 static int DrawAnimatedSegments(const char* id, ImVec2 pos, ImVec2 size,
     const char* const* labels, int count, int selected, UIAnimatedValue& animation, float scale) {
     ImGui::PushID(id);
