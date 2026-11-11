@@ -1,3 +1,19 @@
+// TaiCH 游戏助手 (TaiCH Game Filter)
+// 程序入口：窗口与 Direct3D 初始化、桌面抓帧、内嵌 HLSL 滤镜、配置读写、主循环
+// Copyright (C) 2026 chenhj6677-ui
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
 // =============================================================
 // TaiCH游戏助手 (Game Filter)
 //   ImGui + Direct3D 11 + DXGI 桌面复制

@@ -1,3 +1,5 @@
+// TaiCH 游戏助手 — 画面调节页：预览对比、预设选择与七项参数微调
+// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 // Light editor UI. Coordinates use a 1200 x 820 design canvas.
 static ImFont* g_fontBody = nullptr;
 static ImFont* g_fontTitle = nullptr;

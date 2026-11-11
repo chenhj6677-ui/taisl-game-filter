@@ -1,4 +1,7 @@
 @echo off
+rem TaiCH Game Filter - build script
+rem Licensed under the GNU General Public License v3.0 - see LICENSE.
+rem Requires MinGW-w64 (g++, windres). Override the toolchain root with the MINGW variable.
 setlocal
 cd /d "%~dp0"
 if not defined MINGW set "MINGW=D:\toolchains\mingw64"

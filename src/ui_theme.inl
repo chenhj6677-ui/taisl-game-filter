@@ -1,3 +1,5 @@
+// TaiCH 游戏助手 — 亮 / 暗主题的配色映射
+// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 // Theme conversion is used only by UI drawing. Image tints, crosshair colors
 // and desktop filter constants never go through this function.
 static ImU32 UIColor(int r,int g,int b,int a=255) {
