@@ -1,0 +1,19 @@
+# 构建产物 / build artifacts
+build/
+outputs/
+*.exe
+*.o
+*.obj
+*.res.o
+*.lnk
+
+# 个人配置与备份 / local config and backups
+*.cfg
+*.bak
+
+# 编辑器与系统文件 / editors and OS junk
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
