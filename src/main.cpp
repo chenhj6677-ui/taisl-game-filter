@@ -1,6 +1,6 @@
 // Taisl 游戏助手 (Taisl Game Filter)
 // 程序入口：窗口与 Direct3D 初始化、桌面抓帧、内嵌 HLSL 滤镜、配置读写、主循环
-// Copyright (C) 2026 chenhj6677-ui
+// Copyright (C) 2026 ikun-2dot5
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
