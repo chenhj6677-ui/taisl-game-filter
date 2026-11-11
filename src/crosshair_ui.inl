@@ -1,5 +1,5 @@
-// TaiCH 游戏助手 — 准星设置页：样式、颜色、尺寸与位置
-// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
+// Taisl 游戏助手 — 准星设置页：样式、颜色、尺寸与位置
+// 本文件是 Taisl 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 static void DrawCrosshairPage(ImVec2 origin,float s) {
     EnsureCrosshairSample();
     ImDrawList* dl=ImGui::GetWindowDrawList(); auto& io=ImGui::GetIO();

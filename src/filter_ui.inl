@@ -1,5 +1,5 @@
-// TaiCH 游戏助手 — 画面调节页：预览对比、预设选择与七项参数微调
-// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
+// Taisl 游戏助手 — 画面调节页：预览对比、预设选择与七项参数微调
+// 本文件是 Taisl 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 // Light editor UI. Coordinates use a 1200 x 820 design canvas.
 static ImFont* g_fontBody = nullptr;
 static ImFont* g_fontTitle = nullptr;
@@ -169,7 +169,7 @@ static void DrawPanel() {
     ImGui::SetNextWindowPos(animatedPos);
     ImGui::SetNextWindowSize(size);
     ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 26*s);
-    ImGui::Begin("TaiCH游戏助手", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse | ((!g_panelVisible || visibility < 0.35f) ? ImGuiWindowFlags_NoInputs : 0));
+    ImGui::Begin("Taisl游戏助手", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse | ((!g_panelVisible || visibility < 0.35f) ? ImGuiWindowFlags_NoInputs : 0));
     const ImVec2 origin = ImGui::GetWindowPos();
     g_panelRect = { (LONG)origin.x, (LONG)origin.y, (LONG)(origin.x+size.x), (LONG)(origin.y+size.y) };
     ImDrawList* dl = ImGui::GetWindowDrawList();
@@ -207,7 +207,7 @@ static void DrawPanel() {
     dl->AddRectFilled(P(34,27),P(76,69),accent,13*s);
     dl->AddCircleFilled(P(55,48),8*s,IM_COL32(255,255,247,255));
     dl->AddCircle(P(55,48),9*s,UIColor(64,88,172,255),0,2*s);
-    text(93,27,"TaiCH游戏助手",g_fontTitle,22,ink);
+    text(93,27,"Taisl游戏助手",g_fontTitle,22,ink);
     text(94,59,"画面与准星  /  专注每一刻",g_fontSmall,12,muted);
     static UIAnimatedValue pageAnimation(0);
     const char* pages[]={"画面调节","准星设置","设置"};

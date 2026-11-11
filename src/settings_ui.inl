@@ -1,5 +1,5 @@
-// TaiCH 游戏助手 — 设置页：主题、毛玻璃、输入模式与配置读写
-// 本文件是 TaiCH 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
+// Taisl 游戏助手 — 设置页：主题、毛玻璃、输入模式与配置读写
+// 本文件是 Taisl 游戏助手的一部分，以 GNU GPL v3.0 发布，详见根目录 LICENSE。
 static void DrawSettingsPage(ImVec2 origin,float s) {
     auto* dl=ImGui::GetWindowDrawList();
     auto P=[&](float x,float y){return ImVec2(origin.x+x*s,origin.y+y*s);};

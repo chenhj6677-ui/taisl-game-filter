@@ -1,4 +1,4 @@
-// TaiCH 游戏助手 (TaiCH Game Filter)
+// Taisl 游戏助手 (Taisl Game Filter)
 // 程序入口：窗口与 Direct3D 初始化、桌面抓帧、内嵌 HLSL 滤镜、配置读写、主循环
 // Copyright (C) 2026 chenhj6677-ui
 //
@@ -15,7 +15,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 // =============================================================
-// TaiCH游戏助手 (Game Filter)
+// Taisl游戏助手 (Game Filter)
 //   ImGui + Direct3D 11 + DXGI 桌面复制
 //   抓取当前显示器画面 -> 像素着色器调色 -> 全屏无边框窗口叠加输出
 // =============================================================
@@ -638,7 +638,7 @@ static bool InitWindow(HINSTANCE hInst)
     wc.hInstance     = hInst;
     wc.hCursor       = LoadCursor(nullptr, IDC_ARROW);
     wc.hbrBackground = nullptr;
-    wc.lpszClassName = L"TaiCHAssistantWindow";
+    wc.lpszClassName = L"TaislAssistantWindow";
     if (!RegisterClassExW(&wc)) return false;
 
     MONITORINFO mi = { sizeof(mi) };
@@ -646,8 +646,8 @@ static bool InitWindow(HINSTANCE hInst)
     g_monRect = mi.rcMonitor;
 
     // 必须带 WS_EX_LAYERED：只有分层窗口的 WS_EX_TRANSPARENT 才能把鼠标透传给其它进程的窗口
-    g_hwnd = CreateWindowExW(WS_EX_TOPMOST | WS_EX_TOOLWINDOW | WS_EX_LAYERED, L"TaiCHAssistantWindow",
-                             L"TaiCH游戏助手", WS_POPUP, g_monRect.left, g_monRect.top,
+    g_hwnd = CreateWindowExW(WS_EX_TOPMOST | WS_EX_TOOLWINDOW | WS_EX_LAYERED, L"TaislAssistantWindow",
+                             L"Taisl游戏助手", WS_POPUP, g_monRect.left, g_monRect.top,
                              g_monRect.right - g_monRect.left, g_monRect.bottom - g_monRect.top,
                              nullptr, nullptr, hInst, nullptr);
     if (!g_hwnd) return false;
@@ -733,7 +733,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int)
 
     if (!InitWindow(hInst))
     {
-        MessageBoxW(nullptr, L"窗口创建失败", L"TaiCH游戏助手", MB_ICONERROR);
+        MessageBoxW(nullptr, L"窗口创建失败", L"Taisl游戏助手", MB_ICONERROR);
         return 1;
     }
 
@@ -741,7 +741,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int)
     if (FAILED(CreateDXGIFactory1(__uuidof(IDXGIFactory2), (void**)&factory)) ||
         !PickAdapterOutput(factory) || !CreateDeviceAndSwapChain(factory))
     {
-        MessageBoxW(nullptr, L"Direct3D 11 初始化失败，请确认显卡驱动正常", L"TaiCH游戏助手", MB_ICONERROR);
+        MessageBoxW(nullptr, L"Direct3D 11 初始化失败，请确认显卡驱动正常", L"Taisl游戏助手", MB_ICONERROR);
         return 1;
     }
     factory->Release();
@@ -750,7 +750,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int)
     {
         wchar_t msg[600];
         swprintf(msg, 600, L"着色器初始化失败：%hs", g_shaderErr);
-        MessageBoxW(nullptr, msg, L"TaiCH游戏助手", MB_ICONERROR);
+        MessageBoxW(nullptr, msg, L"Taisl游戏助手", MB_ICONERROR);
         return 1;
     }
 
